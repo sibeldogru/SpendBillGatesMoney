@@ -1,16 +1,42 @@
-# React + Vite
+# 💸 Spend Bill Gates' Money (React Clone)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun React-based clone of the famous **neal.fun – Spend Bill Gates' Money** game.  
+The goal of the application is to simulate spending Bill Gates’ $100,000,000,000 on imaginary products while dynamically tracking the remaining balance.
 
-Currently, two official plugins are available:
+This project was built as a frontend exercise focusing on **React state management, component-based UI design, and responsive layout styling**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo Concept
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+You start with **$100,000,000,000**.  
+Each product has a fixed price.
 
-## Expanding the ESLint configuration
+- Buying a product decreases the balance
+- Selling a product increases the balance
+- You can only sell products you already own
+- You cannot buy a product if you don’t have enough money
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 💰 Initial balance of **$100,000,000,000**
+- 🛒 Buy & Sell functionality per product
+- 🚫 Disabled **Buy** button when balance is insufficient
+- 🚫 Disabled **Sell** button when product quantity is zero
+- 🖼️ Product cards with image placeholders
+- 📊 Purchased items summary with total cost
+- 🎨 UI inspired by **neal.fun**
+- 📱 Responsive layout
+
+---
+
+## 🧩 Tech Stack
+
+- **React** (Hooks: `useState`, `useMemo`)
+- **JavaScript (ES6+)**
+- **CSS3** (Grid & Flexbox)
+- **Vite** (or CRA-compatible structure)
+## 📁 Project Structure
+
