@@ -38,5 +38,4 @@ Each product has a fixed price.
 - **JavaScript (ES6+)**
 - **CSS3** (Grid & Flexbox)
 - **Vite** (or CRA-compatible structure)
-## 📁 Project Structure
 
