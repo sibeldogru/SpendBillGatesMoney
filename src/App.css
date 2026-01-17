@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  background: #f2f4f7;
+}
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f4f7;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ---------- HEADER ---------- */
+
+.top {
+  background: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ---------- BALANCE BAR ---------- */
+
+.balance-bar {
+  width: 100%;
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  padding: 26px 10px;
+  margin-bottom: 40px;
+}
+
+/* ---------- PRODUCT GRID ---------- */
+
+.product-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px 60px;
+}
+
+/* ---------- PRODUCT CARD ---------- */
+
+.product-card {
+  background: white;
+  border-radius: 6px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.product-img {
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.price {
+  display: block;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2ecc71;
+}
+
+/* ---------- CONTROLS ---------- */
+
+.controls {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls input {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.buy {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  color: white;
+}
+
+button.sell {
+  background: #ecf0f1;
+  color: #333;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- SUMMARY ---------- */
+
+.summary {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.summary h2 {
+  margin-top: 0;
+}
+
+.empty {
+  opacity: 0.6;
+}
